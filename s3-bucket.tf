@@ -1,5 +1,6 @@
 module "s3-bucket" {
-  source  = "https://app.terraform.io/app/suresh4-training/registry/modules/private/suresh4-training/s3-bucket/aws/2.5.0"
+  source  = "app.terraform.io/suresh4-training/s3-bucket/aws"
   version = "2.2.0"
+  bucket_prefix = "suresh4training"
   # insert required variables here
 }
