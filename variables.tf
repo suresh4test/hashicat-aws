@@ -14,6 +14,10 @@ variable "region" {
   default     = "us-east-1"
 }
 
+variable "bucket_prefix" {
+  description = "This prefix will be included in the name of most resources."
+}
+
 variable "address_space" {
   description = "The address space that is used by the virtual network. You can supply more than one address space. Changing this forces a new resource to be created."
   default     = "10.0.0.0/16"
